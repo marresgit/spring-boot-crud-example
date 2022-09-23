@@ -14,6 +14,7 @@ post (json)
 ```
 to **http://localhost:9191/addPlayer**
 
-Wuala
-**Url:**
+Wuala 	:partying_face:  
+
+**Check result**
 http://localhost:9191/players
