@@ -2,11 +2,14 @@
 im leanring
 
 
-localhost:9191/players
+**Url:**
+http://localhost:9191/players
 
 
-post
+post (json)
+```
 {
 "name":"juggaman"
 }
-to http://localhost:9191/addPlayer
+```
+to **http://localhost:9191/addPlayer**
