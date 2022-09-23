@@ -1,11 +1,11 @@
 # spring-boot-crud-example
-im leanring
+im leanring..
+
+Springboot connected with mysql database.
 
 
-**Url:**
-http://localhost:9191/players
 
-
+## How to use:
 post (json)
 ```
 {
@@ -13,3 +13,7 @@ post (json)
 }
 ```
 to **http://localhost:9191/addPlayer**
+
+Wuala
+**Url:**
+http://localhost:9191/players
