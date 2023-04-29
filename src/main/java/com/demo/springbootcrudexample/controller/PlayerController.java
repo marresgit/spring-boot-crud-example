@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("/v1/players")
 public class PlayerController {
 
     @Autowired
@@ -24,7 +25,7 @@ public class PlayerController {
         return service.savePlayers(players);
     }
 
-    @GetMapping("/players")
+    @GetMapping
     public List<Player> findAllPlayers(){
         return service.getPlayers();
     }
