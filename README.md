@@ -18,3 +18,6 @@ Wuala 	:partying_face:
 
 **Check result**
 http://localhost:9191/players
+
+
+Helping url's: https://www.youtube.com/watch?v=RHZgllzbjVQ
