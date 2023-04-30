@@ -25,6 +25,7 @@ public class PlayerService {
 
     public List<Player> getPlayers(){
         String todos = client.getTodos();
+        System.out.println(todos);
 //        return List.of(Player.builder().id(1).name("kalle").build());
         return repository.findAll();
     }

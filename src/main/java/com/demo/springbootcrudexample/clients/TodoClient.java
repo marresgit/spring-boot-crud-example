@@ -10,7 +10,7 @@ public class TodoClient {
 
     public String getTodos() {
         return todoClient.get()
-                .uri(uri -> uri.path("https://dummyjson.com/todos")
+                .uri(uri -> uri.path("http://dummyjson.com/todos/1")
                         .build())
                 .retrieve()
                 .bodyToMono(String.class)
