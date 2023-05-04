@@ -11,7 +11,7 @@ public class TodoClient {
     public String getTodos() {
         return todoClient
                 .get()
-                .uri("http://dummyjson.com/todos/1")
+                .uri("https://catfact.ninja/fact?max_length=140")
                 .retrieve()
                 .bodyToMono(String.class)
                 .block();
