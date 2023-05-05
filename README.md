@@ -21,3 +21,7 @@ http://localhost:9191/players
 
 
 Helping url's: https://www.youtube.com/watch?v=RHZgllzbjVQ
+
+# More to do:
+* Working api call to opendota or stratz
+* Get recent games on own account
