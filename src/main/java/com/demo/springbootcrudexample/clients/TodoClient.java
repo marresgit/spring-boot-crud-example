@@ -11,7 +11,10 @@ public class TodoClient {
     public String getTodos() {
         return todoClient
                 .get()
-                .uri("https://catfact.ninja/fact?max_length=140")
+//                .uri("https://catfact.ninja/fact?max_length=140")
+                .uri("https://api.opendota.com/api/matches/62297546?api=${API_KEY})
+//                .headers(headers -> headers.setBasicAuth("username", "password")) # Username & password
+                .
                 .retrieve()
                 .bodyToMono(String.class)
                 .block();
