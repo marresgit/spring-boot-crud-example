@@ -12,9 +12,8 @@ public class TodoClient {
         return todoClient
                 .get()
 //                .uri("https://catfact.ninja/fact?max_length=140")
-                .uri("https://api.opendota.com/api/matches/62297546?api=${API_KEY})
+                .uri("https://api.opendota.com/api/matches/62297546?api=${API_KEY}")
 //                .headers(headers -> headers.setBasicAuth("username", "password")) # Username & password
-                .
                 .retrieve()
                 .bodyToMono(String.class)
                 .block();
