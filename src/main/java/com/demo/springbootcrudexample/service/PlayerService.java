@@ -28,8 +28,8 @@ public class PlayerService {
         System.out.println("--------------------------------");
         System.out.println(todos);
         System.out.println("--------------------------------");
-//        return List.of(Player.builder().id(1).name("kalle").build());
-        return repository.findAll();
+        return List.of(Player.builder().id(1).name("kalle").build());
+//        return todos;
     }
     public Player getPlayersById(int id) {
         return repository.findById(id).orElse(null);
