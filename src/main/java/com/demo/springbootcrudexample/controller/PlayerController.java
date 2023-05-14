@@ -26,7 +26,7 @@ public class PlayerController {
     }
 
     @GetMapping
-    public List<Player> findAllPlayers(){
+    public String findAllPlayers(){
         return service.getPlayers();
     }
 

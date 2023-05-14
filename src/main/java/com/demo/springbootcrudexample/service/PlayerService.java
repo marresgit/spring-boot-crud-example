@@ -23,13 +23,10 @@ public class PlayerService {
         return repository.saveAll(players);
     }
 
-    public List<Player> getPlayers(){
-        String todos = client.getTodos();
-        System.out.println("--------------------------------");
-        System.out.println(todos);
-        System.out.println("--------------------------------");
-        return List.of(Player.builder().id(1).name("kalle").build());
-//        return todos;
+    public String getPlayers(){
+//        String todos = client.getTodos();
+//        return List.of(Player.builder().id(1).name("kalle").build());
+        return client.getTodos();
     }
     public Player getPlayersById(int id) {
         return repository.findById(id).orElse(null);
