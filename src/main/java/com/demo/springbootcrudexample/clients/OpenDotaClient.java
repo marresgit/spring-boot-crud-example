@@ -8,11 +8,11 @@ public class OpenDotaClient {
 
     WebClient openDotaClient = WebClient.builder().build();
 
-    public String getSteveAPI(String args[]) {
+    public String getSteveAPI(int dotaPlayerID) {
         return openDotaClient
                 .get()
 //                .uri("https://catfact.ninja/fact?max_length=140")
-                .uri("https://api.opendota.com/api/players/62297546?api")
+                .uri("https://api.opendota.com/api/players/dotaPlayerID?api")
 //                .headers(headers -> headers.setBasicAuth("username", "password")) # Username & password
                 .retrieve()
                 .bodyToMono(String.class)

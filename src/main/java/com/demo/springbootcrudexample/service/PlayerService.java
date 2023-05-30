@@ -47,8 +47,8 @@ public class PlayerService {
 //  ################################################################################
 //  # STEVE API
 //  ################################################################################
-    public String getSteve(){
-        return client.getSteveAPI();
+    public String getSteve(String[] args){
+        return client.getSteveAPI(62297546);
     }
 
 }
