@@ -1,6 +1,6 @@
 package com.demo.springbootcrudexample.service;
 
-import com.demo.springbootcrudexample.clients.TodoClient;
+import com.demo.springbootcrudexample.clients.OpenDotaClient;
 import com.demo.springbootcrudexample.entity.Player;
 import com.demo.springbootcrudexample.repository.PlayerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ public class PlayerService {
     @Autowired
     private PlayerRepository repository;
     @Autowired
-    private TodoClient client;
+    private OpenDotaClient client;
 
     public Player savePlayer(Player player) {
         return repository.save(player);
@@ -22,11 +22,9 @@ public class PlayerService {
     public List<Player> savePlayers(List<Player> players) {
         return repository.saveAll(players);
     }
-
     public String getPlayers(){
-//        String todos = client.getTodos();
 //        return List.of(Player.builder().id(1).name("kalle").build());
-        return client.getTodos();
+        return repository.findAll();
     }
     public Player getPlayersById(int id) {
         return repository.findById(id).orElse(null);
@@ -45,4 +43,12 @@ public class PlayerService {
         existingPlayer.setName(player.getName());
         return repository.save(existingPlayer);
     }
+
+//  ################################################################################
+//  # STEVE API
+//  ################################################################################
+    public String getSteve(){
+        return client.getSteveAPI();
+    }
+
 }

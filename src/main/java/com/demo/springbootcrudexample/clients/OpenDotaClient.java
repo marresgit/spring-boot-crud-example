@@ -4,12 +4,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
 @Service
-public class TodoClient {
+public class OpenDotaClient {
 
-    WebClient todoClient = WebClient.builder().build();
+    WebClient openDotaClient = WebClient.builder().build();
 
-    public String getTodos() {
-        return todoClient
+    public String getSteveAPI(String args[]) {
+        return openDotaClient
                 .get()
 //                .uri("https://catfact.ninja/fact?max_length=140")
                 .uri("https://api.opendota.com/api/players/62297546?api")
@@ -19,3 +19,6 @@ public class TodoClient {
                 .block();
     }
 }
+
+
+//Steve=62297546

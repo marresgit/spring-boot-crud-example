@@ -30,6 +30,11 @@ public class PlayerController {
         return service.getPlayers();
     }
 
+    @GetMapping("/Steve")
+    public String getSteveAPI(){
+        return service.getSteve();
+    }
+
     @GetMapping("/player/{id}")
     public Player findPlayerById(@PathVariable int id){
         return service.getPlayersById(id);
